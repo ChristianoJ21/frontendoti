@@ -1,0 +1,52 @@
+Opsional 
+
+1. Night/Day Mode
+Fitur ini memungkinkan pengguna untuk beralih antara mode malam dan siang pada tampilan halaman web. 
+Dengan menekan tombol 🌞 atau 🌙, halaman akan secara dinamis mengubah latar belakang, teks, dan elemen-elemen lainnya menggunakan class night. 
+Selain itu, teks pada tombol juga berubah sesuai dengan mode yang aktif. Transisi warna dilakukan dengan mulus menggunakan properti CSS transition. 
+Fitur ini sangat berguna untuk meningkatkan kenyamanan pengguna, terutama saat menjelajah di kondisi cahaya rendah.
+
+2. Efek Hover pada Tombol dan Kartu Proyek
+Kode ini menambahkan animasi interaktif pada tombol dan kartu proyek ketika pengguna mengarahkan kursor (hover). 
+Tombol akan sedikit berubah warna dan membesar dengan efek transform: scale(1.05) untuk memberikan kesan responsif. 
+Kartu proyek juga memiliki animasi serupa, membuat elemen-elemen lebih menarik dan memberikan umpan balik visual kepada pengguna. 
+Efek ini tidak hanya estetis tetapi juga membantu pengguna mengidentifikasi elemen yang dapat diklik atau memiliki fungsi tertentu.
+
+3. Fungsi Ekspansi untuk Daftar Kontributor dan Proyek
+Fitur ini memungkinkan pengguna untuk melihat lebih banyak konten secara dinamis tanpa memuat ulang halaman. 
+Misalnya, dalam daftar kontributor, hanya nama utama yang ditampilkan awalnya, tetapi dengan menekan tombol “+3 more,” nama tambahan akan muncul. 
+Fitur yang sama juga diterapkan pada daftar proyek, di mana proyek tambahan hanya muncul saat pengguna menekan tombol “More.” 
+Dengan memanfaatkan class hidden, elemen dapat dengan mudah disembunyikan atau ditampilkan, memberikan navigasi yang lebih rapi dan fleksibel.
+
+4. Function JavaScript 
+
+a. Toggle Mode
+
+Penjelasan teknis:
+	•	Jika class night ada, maka halaman berada dalam mode malam, dan teks tombol berubah menjadi 🌙.
+	•	Sebaliknya, jika class night dihapus, halaman kembali ke mode siang dengan teks tombol 🌞.
+
+b. Fungsi Ekspansi untuk Daftar Kontributor
+
+Fungsi toggleContributors() digunakan untuk menampilkan atau menyembunyikan kontributor tambahan di daftar kontributor. Fungsi ini bekerja dengan cara:
+	•	Mengambil semua elemen dengan class extra menggunakan querySelectorAll().
+	•	Menambahkan atau menghapus class hidden pada elemen-elemen tersebut untuk mengatur visibilitasnya.
+	•	Tombol ekspansi juga diperbarui teksnya dari “+3 more” menjadi “show less” atau sebaliknya, tergantung pada status daftar saat ini.
+
+Fungsi ini sangat berguna untuk menjaga tampilan tetap ringkas tanpa mengurangi aksesibilitas konten.
+
+c. Fungsi Ekspansi untuk Kartu Proyek
+
+Fungsi toggleProjects() bertanggung jawab untuk menampilkan lebih banyak kartu proyek atau menyembunyikannya kembali. Logika kode:
+	•	Mengambil semua elemen dengan class project-card.
+	•	Pada keadaan awal (default), hanya enam kartu pertama yang ditampilkan, sementara sisanya disembunyikan dengan style.display = "none".
+	•	Ketika tombol “More” ditekan, semua kartu proyek akan ditampilkan dengan style.display = "block", dan teks tombol berubah menjadi “Collapse.”
+	•	Jika ditekan lagi, proyek tambahan kembali disembunyikan, dan tombol kembali ke teks “More.”
+
+Fungsi ini menggunakan variabel expanded untuk melacak status apakah proyek tambahan telah ditampilkan atau tidak.
+
+d. Event Listener untuk Penyesuaian Awal Halaman
+
+Kode ini memanfaatkan event listener DOMContentLoaded untuk mengatur tampilan awal halaman. Saat halaman selesai dimuat:
+	•	Hanya enam kartu proyek pertama yang ditampilkan.
+	•	Kartu proyek lainnya diatur dengan style.display = "none".
