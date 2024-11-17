@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmahTI Analytics</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=trophy" /> 
+    <link rel="stylesheet" href="the.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+    <h4>OmahTI Analytics</h4>
+    <div class="menu">
+        <h4>Divisions</h4>
+        <h4>Features</h4>
+        <h4>About</h4>
+        <h4>Contact</h4>
+    </div>
+    </nav>
+    
+    <div class="actions">
+        <button onclick="toggleMode()">🌞</button>
+        <button>Sign In</button>
+        <button class="sign-up-button">Sign Up</button>
+    </div>
+    
+</header>
+
+<hr>
+
+    <main>
+        <div class="all"><p>All OmahTI Divisions →</p></div><br>
+        <h1>Get essential insights</h1> <h1>on OmahTI.</h1>
+        <br>
+            <button class="sign-up-button">Get Started</button>
+            <button>More Analytics</button>
+        </div>
+
+        <section id="tracking">
+            <div class="card">
+                <h5><i class="material-icons">code</i>Project Tracking</h5>
+                <h2>Monitor progress and<br>contributions across <span>all<br>OmahTI projects.</h2></span>
+                <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLui-Qj_Wfgs5L2srykPuEEreNdloy_ae1Tg&s" alt="Project Image">
+            </div>
+            <div class="card">
+                <h5><span class="material-symbols-outlined">
+                    trophy
+                    </span>Competition Analytics</h5>
+                <h2>Track participation and<br> <h2>contributions <span>in IT<br>Competitions.</h2></h2>
+                <br><img src="https://images.foxtv.com/static.fox5atlanta.com/www.fox5atlanta.com/content/uploads/2024/01/1280/720/monkey-8106216_1280.jpg?ve=1&tl=1" alt="Competition Image">
+            </div>
+        </section>
+
+        <section id="latest-projects-section">
+            <div class="latest-projects-info">
+                <br><h1>Latest</h1><h1>projects and</h1><h1>winnings by</h1><h1>OmahTI</h1><h1>divisions.</h1>
+                <br><p>Contributors:</p>
+                <br><ul id="contributors">
+                    <li>Andreandhiki Riyanta</li>
+                    <li>Fahmi Shampoma</li>
+                    <li>Daniel Tulung</li>
+                    <li class="extra hidden">Rama Andhika Pratama</li>
+                    <li class="extra hidden">Muhammad Hanif</li>
+                    <li class="extra hidden">Wibi Laksono Wijaya</li>
+                </ul>
+                <button id="expand-contributors" onclick="toggleContributors()">+3 more</button>
+                
+            </div>
+
+            <div class="project-cards">
+                <div class="project-card">
+                    <img src="https://i.ebayimg.com/images/g/~WYAAOSw13xlHogc/s-l1200.jpg" alt="OmahTI Learning Center">
+                    <h4>OmahTI Learning Center</h4>
+                </div>
+                <div class="project-card">
+                    <img src="https://img.freepik.com/free-photo/monkey-wearing-suit-studio_23-2150754474.jpg" alt="Data Royale">
+                    <h4>Data Royale</h4>
+                </div>
+                <div class="project-card">
+                    <img src="https://t4.ftcdn.net/jpg/08/98/69/87/360_F_898698789_TiDs0IsrFajCviiWgTRGUoicHuKAsCG4.jpg" alt="OemOem">
+                    <h4>OemOem</h4>
+                </div>
+                <div class="project-card">
+                    <img src="https://t4.ftcdn.net/jpg/05/65/43/29/360_F_565432920_o8obrrYdEjiP980vfPuJXhiA1QwAeW2s.jpg" alt="1st Place Datathon">
+                    <h4>1st Place Datathon</h4>
+                </div>
+                <div class="project-card">
+                    <img src="https://t3.ftcdn.net/jpg/07/12/44/34/360_F_712443406_v5MRRFXPoPdrjGDJFKT9KdMf6imKWzSe.jpg" alt="PORSENIGAMA">
+                    <h4>PORSENIGAMA</h4>
+                </div>
+                <div class="project-card">
+                    <img src="https://t4.ftcdn.net/jpg/10/62/65/09/360_F_1062650968_Cn5wN20tgiro74NxtiSGK2NSGkeVonAj.jpg" alt="FMIPA Projects">
+                    <h4>FMIPA Projects</h4>
+                </div>
+                <div class="project-card">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/050/078/398/small/a-gorilla-wearing-a-suit-and-tie-with-a-black-background-photo.jpg" alt="MALPRES MIPA">
+                    <h4>MALPRES MIPA</h4>
+                </div>
+                <div class="project-card">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/040/818/107/small/ai-generated-a-monkey-exudes-class-in-a-stylish-red-suit-portraying-a-successful-leader-and-confident-gentleman-ai-generated-photo.jpg" alt="FEB UGM's Website">
+                    <h4>FEB UGM's Website</h4>
+                </div>
+                <div class="project-card">
+                    <img src="https://i.pinimg.com/736x/ed/c5/45/edc545f360d5d68077cbb718412f2d1f.jpg" alt="Kopassus">
+                    <h4>Kopassus</h4>
+                </div>
+            </div>
+        </section>
+        <div class="more-less-btn">
+            <button onclick="toggleProjects()">More</button>
+        </div>
+
+        <section id="share">
+            <div class="share-section">
+                <h2>
+                    <span class="bold-text">Ready to share?</span>
+                    <span class="light-text"> Start by creating an account.</span>
+                </h2>
+                <h2>
+                    <span class="light-text">Speak to an </span>
+                    <span>expert</span>
+                    <span class="light-text"> if you need assistance.</span>
+                </h2>
+            </div>
+            <br><button class="sign-up-button">Sign Up</button>
+            <button>Contact</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section information">
+            <h5>Information</h5>
+            <a href="#">About</a><br>
+            <a href="#">Contact</a><br>
+            <a href="#">Cookie Policy</a><br>
+            <a href="#">Terms and Conditions</a><br>
+            <a href="#">Privacy Policy</a><br>
+        </div>
+        <div class="footer-section social">
+            <h5>Social</h5>
+            <a href="https://www.instagram.com/joseintoro">GitHub</a><br>
+            <a href="https://www.instagram.com/joseintoro">Instagram</a><br>
+            <a href="https://www.instagram.com/joseintoro">LinkedIn</a><br>
+            <a href="https://www.instagram.com/joseintoro">Twitter</a><br>
+        </div>
+        <div class="footer-section status">
+            <span>● All systems normal</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
